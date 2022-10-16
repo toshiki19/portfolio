@@ -1,11 +1,21 @@
 version: "3"
 services:
-  app:
+  react:
+      build:
+        context: .
+        dockerfile: ./reactApp/usr/src/app
+      container_name: react_container
+      tty: true
+      volumes:
+        - ./react-app/react-app:/app/react
+      command: sh -c "cd /app/react && yarn install && yarn start"
+      ports:
+        - 3000:3000
+  go:
     build: .
     depends_on:
     - db
-    volumes:
-      - ./:/go/src/app
+    dockerfile: ./go/src/app
     tty: true
 
   db:
@@ -21,4 +31,3 @@ services:
       --innodb_large_prefix=1
     ports:
       - 3306:3306
-      
