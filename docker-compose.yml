@@ -1,33 +1,27 @@
-version: "3"
+version: '3'
+
 services:
-  react:
-      build:
-        context: .
-        dockerfile: ./reactApp/usr/src/app
-      container_name: react_container
-      tty: true
-      volumes:
-        - ./react-app/react-app:/app/react
-      command: sh -c "cd /app/react && yarn install && yarn start"
-      ports:
-        - 3000:3000
-  go:
-    build: .
-    depends_on:
-    - db
-    dockerfile: ./go/src/app
+  react-ts:
+    build: ./react-ts-app
+    ports:
+      - '3000:3000'
     tty: true
+    stdin_open: true
+    
+  go:
+    build: ./go-app
+    ports:
+      - '8000:8000'
+    tty: true
+    stdin_open: true
 
   db:
-    image: mysql:5.7
-    environment:
-    - MYSQL_DATABASE=test_db
-    - MYSQL_ROOT_PASSWORD=password
-    command: >
-      --character-set-server=utf8mb4
-      --collation-server=utf8mb4_general_ci
-      --innodb_file_per_table
-      --innodb_file_format=BARRACUDA
-      --innodb_large_prefix=1
+    image: mysql:8.0
+    volumes:
+      - './db/data:/var/lib/mysql'
+      - './db/my.cnf:/etc/mysql/conf.d/my.cnf'
+    # MYSQL_ROOT_PASSWORDのみをenvファイルで設定
+    env_file:
+      - variables.env
     ports:
-      - 3306:3306
+      - '3306:3306'
