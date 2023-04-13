@@ -32,12 +32,12 @@ const Home = () => {
                     <div className="md:w-1/2 flex-grow lg:pr-24 md:pr-16 text-center mb-16 md:text-left">
                         <h1 className="sm:text-6xl text-3xl mb-4 font-medium text-gray-900">
                             Toshiki Ura
-                            
+
                         </h1>
-                        <p className="mb-8 leading-relaxed">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-                            dignissimos atque voluptate blanditiis necessitatibus reiciendis
-                            tenetur amet? Repudiandae, cupiditate illum.
+                        <p className="text-center text-xl mb-8 leading-relaxed">
+                            大学：青山学院大学 <br />
+                            学部：社会情報学部<br />
+                            部活：理工ゴルフ部（マッシー）
                         </p>
                         <div>
                             <button className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
@@ -61,25 +61,19 @@ const Home = () => {
                         <h1 className="sm:text-3xl text-2xl font-medium mb-2 text-gray-900">
                             About Me
                         </h1>
-                        <p className="pb-10">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Reiciendis, velit?
+                        <p className="text-xl pb-10">
+                            座右の銘：やらなきゃ、わからない！
                         </p>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
-                            ad debitis praesentium quis dolore adipisci deleniti. Fugit non
-                            magni dolorem! Facere debitis rerum qui ut fuga, ullam, ad vitae
-                            explicabo et ipsa amet consequatur ipsum iure quibusdam numquam
-                            illo ipsam reiciendis rem sapiente architecto exercitationem,
-                            labore quaerat. Dolore numquam quam repellendus saepe culpa
-                            distinctio maiores soluta, pariatur quae alias velit nisi
-                            corrupti, quod magnam eius. Necessitatibus architecto nobis ipsa,
-                            excepturi voluptatibus eum velit cum sequi possimus harum sunt
-                            commodi cumque sint. Enim tempora minima sapiente omnis, qui
-                            facilis! Sequi, ab ut facere excepturi molestias ipsa, reiciendis
-                            quisquam, sed eos magni aliquid explicabo. Est vel sequi cum ipsa
+                            水泳歴14年、県大会や関東大会で入賞。<br />
+                            趣味：水泳、ゴルフ、ゲーム、アニメ、漫画、小説<br />
+                            特技：漫画や小説を読み漁っているため、どの作品がアニメ化されるか大抵わかること。<br />
+                            最近嬉しかったことは、ライバルだった選手が世界選手権でメダルを取ったこと。<br />
                         </p>
                     </div>
+                    <h1 className="sm:text-3xl text-2xl font-medium text-gray-900">
+                        Work
+                    </h1>
                     <div className="flex -m-4 flex-wrap">
                         <div className="md:w-1/3 p-4">
                             <div className="bg-gray-100 h-full p-8 rounded-lg ">
@@ -98,13 +92,12 @@ const Home = () => {
                                         </svg>
                                     </div>
                                     <h2 className="text-gray-900 text-lg font-medium">
-                                        Web Developer
+                                        FaceServer
                                     </h2>
                                 </div>
                                 <div className="#">
                                     <p className="leading-relaxed text-base">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Molestiae, laudantium?.
+                                        人間の顔をなんの動物のタイプに似ているか分類して獣耳を生やしたアニメ風の画像を生成するAPIサーバ
                                     </p>
                                     <a href="#" className="mt-3 text-green-500 flex items-center">
                                         もっと見る
@@ -140,13 +133,12 @@ const Home = () => {
                                         </svg>
                                     </div>
                                     <h2 className="text-gray-900 text-lg font-medium">
-                                        Web Developer
+                                        Openpose
                                     </h2>
                                 </div>
                                 <div className="#">
                                     <p className="leading-relaxed text-base">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Molestiae, laudantium?.
+                                        関節を検知し、かめはめ波を打てるアプリケーション。
                                     </p>
                                     <a href="#" className="mt-3 text-green-500 flex items-center">
                                         もっと見る
@@ -182,13 +174,12 @@ const Home = () => {
                                         </svg>
                                     </div>
                                     <h2 className="text-gray-900 text-lg font-medium">
-                                        Web Developer
+                                        calender
                                     </h2>
                                 </div>
                                 <div className="#">
                                     <p className="leading-relaxed text-base">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Molestiae, laudantium?.
+                                        初めて作ったカレンダーサイト。
                                     </p>
                                     <a href="#" className="mt-3 text-green-500 flex items-center">
                                         もっと見る
