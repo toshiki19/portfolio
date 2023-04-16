@@ -1,24 +1,42 @@
 import React from 'react'
-import {Link, Route} from 'react-router-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+} from 'react-router-dom';
+import Home from './home';
 
 const navbar = () => {
   return (
     <header
-    className='w-full px-32 py-8 font-medium flex items-center justify-between'
+      className='w-full px-32 py-8 font-medium flex items-center justify-between'
     >
       <nav>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/articles">Articles</Link>
+        <BrowserRouter>
+          <Routes>
+          <Route path='/' element={<Home />} />
+            {/*<Link to="/">Home</Link>
+
+            <Link to="/about">About</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/articles">Articles</Link>
+  */}
+          </Routes>
+        </BrowserRouter>
       </nav>
       <h2>Logo</h2>
       <nav>
-        <Link href="/" target={"_blank"}>T</Link>
-        <Link href="/" target={"_blank"}>T</Link>
-        <Link href="/" target={"_blank"}>T</Link>
-        <Link href="/" target={"_blank"}>T</Link>
-        <Link href="/" target={"_blank"}>T</Link>
+        {/*<BrowserRouter>
+        <Routes>
+        <Link to="/" target={"_blank"}>T</Link>
+        <Link to="/" target={"_blank"}>T</Link>
+        <Link to="/" target={"_blank"}>T</Link>
+        <Link to="/" target={"_blank"}>T</Link>
+        <Link to="/" target={"_blank"}>T</Link>
+        </Routes>
+        </BrowserRouter>
+*/}
       </nav>
     </header>
   )
