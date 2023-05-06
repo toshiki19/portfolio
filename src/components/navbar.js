@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Logo from '@/components/logo'
 import { useRouter } from 'next/router'
 import  { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon } from './icons'
+import { motion } from 'framer-motion';
 
 const CustomLink = ({ href, title, className="" }) => {
     const router = useRouter();
@@ -31,22 +32,42 @@ const NavBar = () => {
 
         </nav>
         
-        <nav>
-            <Link href='/' target={"_blank"}>
+        <nav className='flex items-center justify-center flex-wrap'>
+            <motion.a href='/https://twitter.com' target={"_blank"}
+            className='w-6 mr-3'
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            >
                 <TwitterIcon />
-            </Link>
-            <Link href='/' target={"_blank"}>
+            </motion.a>
+            <motion.a href='/' target={"_blank"}
+            className='w-6 mx-3'
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            >
                 <GithubIcon />
-            </Link>
-            <Link href='/' target={"_blank"}>
+            </motion.a>
+            <motion.a href='/' target={"_blank"}
+            className='w-6 mx-3'
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            >
                 <LinkedInIcon />
-            </Link>
-            <Link href='/' target={"_blank"}>
+            </motion.a>
+            <motion.a href='/' target={"_blank"}
+            className='w-6 mx-3'
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            >
                 <PinterestIcon />
-            </Link>
-            <Link href='/' target={"_blank"}>
+            </motion.a>
+            <motion.a href='/' target={"_blank"}
+            className='w-6 ml-3'
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            >
                 <DribbbleIcon />
-            </Link>
+            </motion.a>
         </nav>
         <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
         <Logo />
