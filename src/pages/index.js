@@ -6,7 +6,7 @@ import AnimatedText from '@/components/animatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/icons'
 import HireMe from '@/components/hireMe'
-import lightBulb from '../../public/images/svg/miscellaneous_icons_1.svg'
+import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 
 export default function Home() {
   return (
