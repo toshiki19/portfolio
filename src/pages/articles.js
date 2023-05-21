@@ -12,6 +12,7 @@ import article_5 from '../../public/images/articles/smooth scrolling in reactjs.
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { useMotionValue } from 'framer-motion';
+import TransitionEvent from '@/components/transitionEffect';
 
 const FramerImage = motion(Image);
 
@@ -96,6 +97,7 @@ const articles = () => {
       <title>CodeBucks | Articles Page</title>
       <meta name="description" content="any description" />
     </Head>
+    <TransitionEvent />
     <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
       <Layout className='pt-16'>
         <AnimatedText text="articles Page" className='mb-16 lg:!text-7xl sm:md-8 sm:!text-6xl xs:!text-4xl'/>

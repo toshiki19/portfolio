@@ -7,6 +7,7 @@ import { GithubIcon } from '@/components/icons'
 import Image from 'next/image'
 import project_1 from '../../public/images/projects/crypto-screener-cover-image.jpg'
 import { motion } from 'framer-motion';
+import TransitionEvent from '@/components/transitionEffect';
 
 const FramerImage = motion(Image);
 
@@ -88,6 +89,7 @@ const projects = () => {
           <title>CodeBucks | Project Page</title>
           <meta name="description" content="any description" />
       </Head>
+      <TransitionEvent />
       <main className='mb-16 flex w-full flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
           <AnimatedText text="Imagination Trumps Knowledge!" className='mb-16 lg:!text-7xl sm:md-8 sm:!text-6xl xs:!text-4xl'/>
